@@ -1,3 +1,25 @@
+$mainGreen: #91B958;
+$myGrey: rgb(240, 240, 240);
+
 .App {
-  text-align: center;
+  font-family: Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+.header {
+  &__logo {
+    color: $mainGreen;
+
+    &-text {
+      font-weight: 600;
+    }
+  }
+
+  &__input {
+
+    &::placeholder {
+      font-weight: 600;
+      font-size: 12px;
+    }
+  }
 }
