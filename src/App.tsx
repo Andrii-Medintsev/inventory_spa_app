@@ -5,7 +5,7 @@ import { ReactComponent as Clock } from './images/time.svg';
 
 const App = () => {
   return (
-    <div className="App text-secondary">
+    <div className="App text-secondary vh-100">
       <header className="header shadow-lg p-2">
         <div className="header__container container d-flex justify-content-between align-items-center p-0">
           <div className="header__left d-flex align-items-center">
@@ -29,6 +29,38 @@ const App = () => {
           </div>
         </div>
       </header>
+
+      <div className="main h-100 d-flex">
+        <div className="sidebar h-100 shadow-lg text-dark">
+          <div className="sidebar__profile profile mt-5">
+            <div className="profile__photo mb-4">
+              <a href='#' className="profile__settings"></a>
+            </div>
+          </div>
+          <nav className="sidebar__nav nav">
+            <ul className='nav__list p-0 m-0 d-flex flex-column gap-2 text-uppercase'>
+              <li className="nav__item">
+                <a href="#" className="nav__link nav__link--active text-dark">Приход</a>
+              </li>
+              <li className="nav__item">
+                <a href="#" className="nav__link text-dark">Группы</a>
+              </li>
+              <li className="nav__item">
+                <a href="#" className="nav__link text-dark">Продукты</a>
+              </li>
+              <li className="nav__item">
+                <a href="#" className="nav__link text-dark">Пользователи</a>
+              </li>
+              <li className="nav__item">
+                <a href="#" className="nav__link text-dark">Настройки</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        {/* <div className="main__content m-5 p-5">hello</div> */}
+      </div>
+
     </div>
   );
 };

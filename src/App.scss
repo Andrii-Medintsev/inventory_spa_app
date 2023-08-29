@@ -3,7 +3,7 @@ $myGrey: rgb(240, 240, 240);
 
 .App {
   font-family: Helvetica, sans-serif;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .header {
@@ -20,6 +20,70 @@ $myGrey: rgb(240, 240, 240);
     &::placeholder {
       font-weight: 600;
       font-size: 12px;
+    }
+  }
+}
+
+.sidebar {
+  width: 15%;
+}
+
+.profile {
+  &__photo {
+    position: relative;
+    margin: 0 auto;
+    width: 90px;
+    height: 90px;
+    background-image: url("./images/img.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__settings {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 0 6px 0 lightgray;
+    background-image: url("./images/settings.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 15px 15px;
+  }
+}
+
+.nav {
+  &__list {
+    width: 100%;
+    list-style-type: none;
+  }
+
+  &__item {
+    text-align: center;
+  }
+
+  &__link {
+    width: fit-content;
+    margin: 0 auto;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+
+    &--active {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &::after {
+        content: '';
+        height: 2px;
+        width: 100%;
+        background-color: $mainGreen;
+      }
     }
   }
 }
