@@ -1,0 +1,72 @@
+.sidebar {
+  width: 15%;
+  min-width: 115px;
+}
+
+.profile {
+  &__photo {
+    position: relative;
+    margin: 0 auto;
+    width: 50%;
+    height: 90px;
+    background-image: url("../../images/img.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__settings {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 0 6px 0 lightgray;
+    background-image: url("../../images/settings.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+  }
+}
+
+.nav {
+  &__list {
+    display: flex;
+    width: 100%;
+    list-style-type: none;
+  }
+
+  &__item {
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  &__link {
+    text-decoration: none;
+
+    &::after {
+      content: '';
+      line-height: 24px;
+      height: 2px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: $mainGreen;
+      transform: scale(0);
+      transform-origin: left;
+      transition: all 300ms;
+    }
+
+    &--active {
+      &::after {
+        transform: scale(1);
+      }
+    }
+  }
+}

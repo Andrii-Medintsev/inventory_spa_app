@@ -1,0 +1,18 @@
+.header {
+  &__logo {
+    color: $mainGreen;
+    text-decoration: none;
+
+    &-text {
+      font-weight: 600;
+    }
+  }
+
+  &__input {
+
+    &::placeholder {
+      font-weight: 600;
+      font-size: 12px;
+    }
+  }
+}

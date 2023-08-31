@@ -1,0 +1,38 @@
+.product {
+  &__small-text {
+    font-size: 9px;
+  }
+
+  &__bullet {
+    width: 8px;
+    height: 8px;
+    background-color: $mainGreen;
+
+    &--ready {
+      background-color: $ready;
+    }
+  }
+
+  &__name {
+    font-weight: 600;
+    position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: lightgray;
+      }
+  }
+
+  &__delete {
+    transition: all 300ms;
+    &:hover {
+      transform: scale(1.1);
+      fill: $mainGreen;
+    }
+  }
+}
