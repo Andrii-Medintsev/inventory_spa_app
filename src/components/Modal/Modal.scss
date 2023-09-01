@@ -1,0 +1,17 @@
+.modal {
+  &__title {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  &__button {
+    &:hover {
+      background: none;
+    }
+  }
+
+  &__button-text {
+    font-size: 12px;
+    font-weight: 700;
+  }
+}

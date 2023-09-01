@@ -8,7 +8,10 @@ $inProgress: #555;
 @import './components/Product/Product.scss';
 @import './pages/ProductsPage/ProductsPage.scss';
 @import './components/Order/Order.scss';
+@import './pages/OrdersPage/OrdersPage.scss';
 @import './components/ProductsList/ProductsList.scss';
+@import './components/DeleteButton/DeleteButton.scss';
+@import './components/Modal/Modal.scss';
 
 .App {
   font-family: Helvetica, sans-serif;

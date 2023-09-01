@@ -1,3 +1,16 @@
 .order {
   cursor: pointer;
+
+  &__title {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  &__products-amount {
+    font-size: 14px;
+  }
+
+  &__dates--short {
+    font-size: 10px;
+  }
 }

@@ -22,6 +22,7 @@ export interface ProductType {
 }
 
 export interface OrderType {
+  id: number
   title: string;
   date: string;
   description: string;

@@ -39,7 +39,10 @@ export const ProductsPage = () => {
         </div>
       </div>
 
-      <ProductsList products={visibleProducts} />
+      <ProductsList
+        products={visibleProducts}
+        isSmallCard={false}
+      />
     </div>
   );
 };

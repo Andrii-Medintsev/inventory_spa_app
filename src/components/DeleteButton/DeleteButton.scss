@@ -1,0 +1,7 @@
+.delete-button {
+  transition: all 300ms;
+  &:hover {
+    transform: scale(1.1);
+    fill: $mainGreen;
+  }
+}

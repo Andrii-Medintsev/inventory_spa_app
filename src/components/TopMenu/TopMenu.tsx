@@ -4,15 +4,13 @@ import { ReactComponent as Clock } from '../../images/time.svg';
 
 export const TopMenu = () => {
   const date = new Date();
-  const fullDate = date.toLocaleDateString(
-    'en-uk',
-    {
-      year: 'numeric',
-      month: 'short',
-      day: 'numeric'
-    }
-  );
-  const day = date.toLocaleDateString('en', { weekday: 'long' });
+
+  const dayStr = date.toLocaleDateString('ru', { weekday: 'long' });
+  const dayToShow = dayStr[0].toUpperCase() + dayStr.slice(1);
+  const dayNumber = '0' + date.toLocaleDateString('default', { day: 'numeric'});
+  const month = date.toLocaleDateString('ru', { month: 'short'}).slice(0, -1);
+  const monthToShow = month[0].toUpperCase() + month.slice(1);
+  const year = date.toLocaleDateString('ru', { year: 'numeric' });
 
   const time = date.toLocaleTimeString();
 
@@ -40,8 +38,8 @@ export const TopMenu = () => {
         </div>
 
         <div className="header__date-time d-flex flex-column">
-          <span className="header__day-name">{day}</span>
-          <span className="header__date d-flex gap-3">{fullDate}
+          <span className="header__day-name">{dayToShow}</span>
+          <span className="header__date d-flex gap-3">{`${dayNumber.slice(-2)} / ${monthToShow} / ${year}`}
             <span className='header__time d-flex align-items-center gap-1'>
               <Clock width={12} height={12} />
               {currentTime}
