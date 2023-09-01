@@ -1,0 +1,1 @@
+# inventory_spa_app
