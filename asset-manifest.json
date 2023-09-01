@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/inventory_spa_app/static/css/main.e7819c12.css",
-    "main.js": "/inventory_spa_app/static/js/main.3eef8ef7.js",
+    "main.css": "/inventory_spa_app/static/css/main.9ccebf77.css",
+    "main.js": "/inventory_spa_app/static/js/main.5f7ac152.js",
     "static/media/img.png": "/inventory_spa_app/static/media/img.e39e299925005f58a90a.png",
     "static/media/settings.svg": "/inventory_spa_app/static/media/settings.e50b0c250b5807586ae7.svg",
     "index.html": "/inventory_spa_app/index.html",
     "static/media/shield-half.svg": "/inventory_spa_app/static/media/shield-half.9365821a04919c8df9fb89fcad7ff441.svg",
     "static/media/cross.svg": "/inventory_spa_app/static/media/cross.715df064e838f72bed01.svg",
     "static/media/time.svg": "/inventory_spa_app/static/media/time.3969bebb011a744ace602e445cf1efab.svg",
-    "main.e7819c12.css.map": "/inventory_spa_app/static/css/main.e7819c12.css.map",
-    "main.3eef8ef7.js.map": "/inventory_spa_app/static/js/main.3eef8ef7.js.map"
+    "main.9ccebf77.css.map": "/inventory_spa_app/static/css/main.9ccebf77.css.map",
+    "main.5f7ac152.js.map": "/inventory_spa_app/static/js/main.5f7ac152.js.map"
   },
   "entrypoints": [
-    "static/css/main.e7819c12.css",
-    "static/js/main.3eef8ef7.js"
+    "static/css/main.9ccebf77.css",
+    "static/js/main.5f7ac152.js"
   ]
 }
