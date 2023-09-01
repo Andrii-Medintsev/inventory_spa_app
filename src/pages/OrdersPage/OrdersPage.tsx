@@ -5,7 +5,8 @@ import { ProductsList } from '../../components/ProductsList/ProductsList';
 import { MyModal } from '../../components/Modal/Modal';
 
 export const OrdersPage = () => {
-  const [visibleOrders, setVisibleOrders] = useState([...orders ]);
+
+  const [ visibleOrders, setVisibleOrders ] = useState([ ...orders ]);
 
   const [ selectedOrderId, setSelectedOrderId ] = useState(0);
   const [ isDeleting, setIsDeleting ] = useState(false);
@@ -23,7 +24,7 @@ export const OrdersPage = () => {
 
   return (
     <>
-      <div className='d-flex gap-1'>
+      <div className='d-flex gap-1 position-absolute'>
         <ul className="products__list d-flex flex-column gap-2 m-0 p-0 pe-3 overflow-scroll text-nowrap">
           {visibleOrders.map(order => (
             <Order
@@ -51,6 +52,7 @@ export const OrdersPage = () => {
                 isSmallCard={true}
               />
             </div>
+
           )
         }
       </div>

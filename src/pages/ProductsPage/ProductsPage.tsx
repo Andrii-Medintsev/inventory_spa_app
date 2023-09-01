@@ -19,7 +19,7 @@ export const ProductsPage = () => {
   const visibleProducts = filterProducts(initialProducts, filterOption);
 
   return (
-    <div className="products">
+    <div className="products position-absolute">
       <div className="products__top mb-4 d-flex gap-5">
         <h2 className=" products__title text-dark m-0 text-nowrap">{`Продукты / ${products.length}`}
         </h2>
